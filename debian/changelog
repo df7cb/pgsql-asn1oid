@@ -1,0 +1,5 @@
+pgsql-asn1oid (0.0.20100818-1) unstable; urgency=low
+
+  * Initial release
+
+ -- Simon Richter <sjr@debian.org>  Wed, 18 Aug 2010 17:26:27 +0200
