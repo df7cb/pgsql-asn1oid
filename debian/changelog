@@ -1,3 +1,10 @@
+pgsql-asn1oid (0.0.20100818-2) unstable; urgency=low
+
+  * Upgrade to policy 3.9.3
+  * Upgrade to PostgreSQL 9.1
+
+ -- Simon Richter <sjr@debian.org>  Sun, 29 Jul 2012 21:19:12 +0200
+
 pgsql-asn1oid (0.0.20100818-1) unstable; urgency=low
 
   * Initial release
