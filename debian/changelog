@@ -1,3 +1,13 @@
+pgsql-asn1oid (0.0.20100818-3.1) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * Port to use pg_buildext and move to PostgreSQL 9.4 for jessie.
+    (Closes: #757392)
+  * Rename binary package to postgresql-9.4-asn1oid.
+  * Add regression tests.
+
+ -- Christoph Berg <myon@debian.org>  Sun, 07 Sep 2014 16:44:53 +0200
+
 pgsql-asn1oid (0.0.20100818-3) unstable; urgency=low
 
   * Update to PostgreSQL 9.3 (Closes: #731913)

@@ -5,12 +5,11 @@ Maintainer: Simon Richter <sjr@debian.org>
 Build-Depends: debhelper (>= 7.0.50~), postgresql-server-dev-all (>= 153~)
 Standards-Version: 3.9.3
 
-Package: postgresql-9.4-asn1oid
+Package: postgresql-PGVERSION-asn1oid
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, postgresql-9.4
+Depends: ${shlibs:Depends}, ${misc:Depends}, postgresql-PGVERSION
 Description: ASN.1 OID data type for PostgreSQL
  This plugin provides the necessary support functions to store ASN.1 OIDs in
  a PostgreSQL database.
  .
- This package has been compiled for PostgreSQL 9.4.
-
+ This package has been compiled for PostgreSQL PGVERSION.
