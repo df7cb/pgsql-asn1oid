@@ -3,13 +3,13 @@ CREATE FUNCTION asn1oid_input (cstring)
     RETURNS asn1oid
     IMMUTABLE
     STRICT
-    LANGUAGE 'C'
+    LANGUAGE C
     AS 'asn1oid.so','asn1oid_input';
 CREATE FUNCTION asn1oid_output (asn1oid)
     RETURNS cstring
     IMMUTABLE
     STRICT
-    LANGUAGE 'C'
+    LANGUAGE C
     AS 'asn1oid.so','asn1oid_output';
 CREATE TYPE asn1oid (
     INPUT = asn1oid_input,
@@ -18,43 +18,43 @@ CREATE FUNCTION asn1oid_eq (asn1oid, asn1oid)
     RETURNS bool
     IMMUTABLE
     STRICT
-    LANGUAGE 'C'
+    LANGUAGE C
     AS 'asn1oid.so','asn1oid_eq';
 CREATE FUNCTION asn1oid_ne (asn1oid, asn1oid)
     RETURNS bool
     IMMUTABLE
     STRICT
-    LANGUAGE 'C'
+    LANGUAGE C
     AS 'asn1oid.so','asn1oid_ne';
 CREATE FUNCTION asn1oid_lt (asn1oid, asn1oid)
     RETURNS bool
     IMMUTABLE
     STRICT
-    LANGUAGE 'C'
+    LANGUAGE C
     AS 'asn1oid.so','asn1oid_lt';
 CREATE FUNCTION asn1oid_gt (asn1oid, asn1oid)
     RETURNS bool
     IMMUTABLE
     STRICT
-    LANGUAGE 'C'
+    LANGUAGE C
     AS 'asn1oid.so','asn1oid_gt';
 CREATE FUNCTION asn1oid_le (asn1oid, asn1oid)
     RETURNS bool
     IMMUTABLE
     STRICT
-    LANGUAGE 'C'
+    LANGUAGE C
     AS 'asn1oid.so','asn1oid_le';
 CREATE FUNCTION asn1oid_ge (asn1oid, asn1oid)
     RETURNS bool
     IMMUTABLE
     STRICT
-    LANGUAGE 'C'
+    LANGUAGE C
     AS 'asn1oid.so','asn1oid_ge';
 CREATE FUNCTION asn1oid_cmp (asn1oid, asn1oid)
     RETURNS int4
     IMMUTABLE
     STRICT
-    AS 'asn1oid.so','asn1oid_cmp' LANGUAGE 'C';
+    AS 'asn1oid.so','asn1oid_cmp' LANGUAGE C;
 CREATE OPERATOR = (
     LEFTARG = asn1oid,
     RIGHTARG = asn1oid,
