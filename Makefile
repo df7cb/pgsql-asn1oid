@@ -1,7 +1,8 @@
 MODULES = asn1oid
+DATA = asn1oid.sql
+REGRESS = init asn1oid
 
-PGCONFIG = pg_config
-
-PGXS = $(shell $(PGCONFIG) --pgxs)
+PG_CONFIG := pg_config
+PGXS := $(shell $(PG_CONFIG) --pgxs)
 
 include $(PGXS)

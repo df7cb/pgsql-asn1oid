@@ -1,0 +1,6 @@
+SELECT '1.2.3'::asn1oid;
+ asn1oid 
+---------
+ 1.2.3
+(1 row)
+
