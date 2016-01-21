@@ -93,7 +93,7 @@
 --- /dev/null
 +++ b/expected/init.out
 @@ -0,0 +1 @@
-+\set ECHO off
++\set ECHO none
 --- /dev/null
 +++ b/sql/asn1oid.sql
 @@ -0,0 +1 @@
@@ -101,6 +101,6 @@
 --- /dev/null
 +++ b/sql/init.sql
 @@ -0,0 +1,3 @@
-+\set ECHO off
++\set ECHO none
 +set client_min_messages = warning;
 +\i asn1oid.sql
