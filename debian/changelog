@@ -1,3 +1,10 @@
+pgsql-asn1oid (0.0.20100818-3.4) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * Upload with 9.6 support.
+
+ -- Christoph Berg <myon@debian.org>  Sat, 24 Sep 2016 22:03:41 +0200
+
 pgsql-asn1oid (0.0.20100818-3.2) unstable; urgency=medium
 
   * Non-maintainer upload.
