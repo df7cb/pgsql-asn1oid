@@ -101,21 +101,36 @@ Datum asn1oid_input(PG_FUNCTION_ARGS)
             tmp[i] += 9;
             break;
         case '.':
-            if(c == str)
-                PG_RETURN_POINTER(0);
+            if(c == str) {
+                if (c[1]) {
+                    /* Skip over first dot */
+                    break;
+                }
+                ereport(ERROR,
+                  (errcode(ERRCODE_INVALID_TEXT_REPRESENTATION),
+                  errmsg("invalid input syntax for type asn1oid: \"%s\"",
+                    str)));
+            }
             ++i;
             if(i >= 64)
-                PG_RETURN_POINTER(0);
+                ereport(ERROR,
+                  (errcode(ERRCODE_INVALID_TEXT_REPRESENTATION),
+                  errmsg("invalid input syntax for type asn1oid: \"%s\"",
+                    str)));
             tmp[i] = 0;
             break;
         default:
-            PG_RETURN_POINTER(0);
+            ereport(ERROR,
+              (errcode(ERRCODE_INVALID_TEXT_REPRESENTATION),
+              errmsg("invalid input syntax for type asn1oid: \"%s\"",
+                str)));
         }
     }
-    if(c == str)
-        PG_RETURN_POINTER(0);
-    if(c[-1] == '.')
-        PG_RETURN_POINTER(0);
+    if(c == str || c[-1] == '.')
+        ereport(ERROR,
+          (errcode(ERRCODE_INVALID_TEXT_REPRESENTATION),
+          errmsg("invalid input syntax for type asn1oid: \"%s\"",
+            str)));
 
     ++i;
 
