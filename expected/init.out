@@ -1,1 +1,1 @@
-\set ECHO none
+CREATE EXTENSION asn1oid;

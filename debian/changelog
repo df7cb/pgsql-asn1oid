@@ -1,6 +1,7 @@
 pgsql-asn1oid (1.1) UNRELEASED; urgency=medium
 
   * Import Debian patches into a new upstream version.
+  * Convert to a proper PostgreSQL extension.
 
  -- Christoph Berg <myon@debian.org>  Sun, 24 Sep 2017 10:53:24 +0200
 

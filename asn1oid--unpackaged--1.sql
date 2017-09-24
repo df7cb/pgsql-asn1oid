@@ -1,0 +1,17 @@
+ALTER EXTENSION asn1oid ADD TYPE asn1oid;
+ALTER EXTENSION asn1oid ADD FUNCTION asn1oid_input (cstring);
+ALTER EXTENSION asn1oid ADD FUNCTION asn1oid_output (asn1oid);
+ALTER EXTENSION asn1oid ADD FUNCTION asn1oid_eq (asn1oid, asn1oid);
+ALTER EXTENSION asn1oid ADD FUNCTION asn1oid_ne (asn1oid, asn1oid);
+ALTER EXTENSION asn1oid ADD FUNCTION asn1oid_lt (asn1oid, asn1oid);
+ALTER EXTENSION asn1oid ADD FUNCTION asn1oid_gt (asn1oid, asn1oid);
+ALTER EXTENSION asn1oid ADD FUNCTION asn1oid_le (asn1oid, asn1oid);
+ALTER EXTENSION asn1oid ADD FUNCTION asn1oid_ge (asn1oid, asn1oid);
+ALTER EXTENSION asn1oid ADD FUNCTION asn1oid_cmp (asn1oid, asn1oid);
+ALTER EXTENSION asn1oid ADD OPERATOR = (asn1oid, asn1oid);
+ALTER EXTENSION asn1oid ADD OPERATOR < (asn1oid, asn1oid);
+ALTER EXTENSION asn1oid ADD OPERATOR > (asn1oid, asn1oid);
+ALTER EXTENSION asn1oid ADD OPERATOR <= (asn1oid, asn1oid);
+ALTER EXTENSION asn1oid ADD OPERATOR >= (asn1oid, asn1oid);
+ALTER EXTENSION asn1oid ADD OPERATOR <> (asn1oid, asn1oid);
+ALTER EXTENSION asn1oid ADD OPERATOR CLASS asn1oid_ops USING btree;

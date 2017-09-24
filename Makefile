@@ -1,5 +1,6 @@
 MODULES = asn1oid
-DATA = asn1oid.sql
+EXTENSION = asn1oid
+DATA = asn1oid--1.sql asn1oid--unpackaged--1.sql
 REGRESS = init asn1oid
 
 PG_CONFIG := pg_config
