@@ -1,9 +1,10 @@
-pgsql-asn1oid (1.1) UNRELEASED; urgency=medium
+pgsql-asn1oid (1.1) unstable; urgency=medium
 
   * Import Debian patches into a new upstream version.
+  * Upload for PostgreSQL 10.
   * Convert to a proper PostgreSQL extension.
 
- -- Christoph Berg <myon@debian.org>  Sun, 24 Sep 2017 10:53:24 +0200
+ -- Christoph Berg <myon@debian.org>  Sun, 24 Sep 2017 11:40:05 +0200
 
 pgsql-asn1oid (0.0.20100818-3.5) unstable; urgency=medium
 
