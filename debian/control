@@ -1,9 +1,10 @@
 Source: pgsql-asn1oid
 Section: database
 Priority: optional
-Maintainer: Simon Richter <sjr@debian.org>
+Maintainer: Debian PostgreSQL Maintainers <pkg-postgresql-public@lists.alioth.debian.org>
+Uploaders: Simon Richter <sjr@debian.org>, Christoph Berg <myon@debian.org>
 Build-Depends: debhelper (>= 9), postgresql-server-dev-all (>= 153~)
-Standards-Version: 3.9.8
+Standards-Version: 4.1.0
 
 Package: postgresql-9.6-asn1oid
 Architecture: any
