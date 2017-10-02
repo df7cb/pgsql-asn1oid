@@ -5,6 +5,9 @@ Maintainer: Debian PostgreSQL Maintainers <pkg-postgresql-public@lists.alioth.de
 Uploaders: Simon Richter <sjr@debian.org>, Christoph Berg <myon@debian.org>
 Build-Depends: debhelper (>= 9), postgresql-server-dev-all (>= 153~)
 Standards-Version: 4.1.0
+Homepage: https://github.com/ChristophBerg/pgsql-asn1oid
+Vcs-Browser: https://github.com/ChristophBerg/pgsql-asn1oid
+Vcs-Git: https://github.com/ChristophBerg/pgsql-asn1oid.git
 
 Package: postgresql-10-asn1oid
 Architecture: any

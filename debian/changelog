@@ -1,6 +1,7 @@
 pgsql-asn1oid (1.2) UNRELEASED; urgency=medium
 
   * More testsuite cases by Herwin Weststrate, thanks!
+  * Add homepage and Vcs fields.
 
  -- Christoph Berg <christoph.berg@credativ.de>  Mon, 02 Oct 2017 10:11:22 +0200
 
