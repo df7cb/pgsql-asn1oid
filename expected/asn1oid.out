@@ -4,3 +4,23 @@ SELECT '1.2.3'::asn1oid;
  1.2.3
 (1 row)
 
+SELECT '.1.2.3'::asn1oid;
+ asn1oid 
+---------
+ 1.2.3
+(1 row)
+
+SELECT null::asn1oid;
+ asn1oid 
+---------
+ 
+(1 row)
+
+SELECT 'foo'::asn1oid;
+ERROR:  invalid input syntax for type asn1oid: "foo"
+LINE 1: SELECT 'foo'::asn1oid;
+               ^
+SELECT 123::asn1oid;
+ERROR:  cannot cast type integer to asn1oid
+LINE 1: SELECT 123::asn1oid;
+                  ^
