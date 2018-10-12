@@ -1,3 +1,10 @@
+pgsql-asn1oid (1.2-2) unstable; urgency=medium
+
+  * Upload for PostgreSQL 11.
+  * Retire Simon from Uploaders, thanks for your work!
+
+ -- Christoph Berg <myon@debian.org>  Fri, 12 Oct 2018 20:12:21 +0200
+
 pgsql-asn1oid (1.2-1) unstable; urgency=medium
 
   * Team upload.

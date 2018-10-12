@@ -1,10 +1,10 @@
 Source: pgsql-asn1oid
 Section: database
 Priority: optional
-Maintainer: Debian PostgreSQL Maintainers <pkg-postgresql-public@lists.alioth.debian.org>
-Uploaders: Simon Richter <sjr@debian.org>, Christoph Berg <myon@debian.org>
+Maintainer: Debian PostgreSQL Maintainers <team+postgresql@tracker.debian.org>
+Uploaders: Christoph Berg <myon@debian.org>
 Build-Depends: debhelper (>= 9), postgresql-server-dev-all (>= 153~)
-Standards-Version: 4.1.1
+Standards-Version: 4.2.0
 Homepage: https://github.com/ChristophBerg/pgsql-asn1oid
 Vcs-Browser: https://github.com/ChristophBerg/pgsql-asn1oid
 Vcs-Git: https://github.com/ChristophBerg/pgsql-asn1oid.git
