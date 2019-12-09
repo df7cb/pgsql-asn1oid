@@ -22,12 +22,9 @@ install:
   # upgrade postgresql-common for new apt.postgresql.org.sh
   - sudo apt-get install -y postgresql-common
   - sudo /usr/share/postgresql-common/pgdg/apt.postgresql.org.sh -p -v $PG_SUPPORTED_VERSIONS -i
-  - sudo apt-get install -y debhelper fakeroot postgresql-server-dev-all -t xenial-pgdg-testing
-  - dpkg -l postgresql\* | cat
 
 script:
-  - pg_buildext updatecontrol
-  - dpkg-buildpackage -us -uc -rfakeroot -b
-  - for deb in ../*.deb; do echo "$deb:"; dpkg-deb --info $deb; dpkg-deb --contents $deb; done
-  - sudo dpkg -i ../*.deb
-  - pg_buildext -i '--locale=C.UTF-8' installcheck
+  - make
+  - sudo make install
+  - pg_virtualenv make installcheck
+  - if test -s regression.diffs; then cat regression.diffs; fi
