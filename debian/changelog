@@ -1,3 +1,9 @@
+pgsql-asn1oid (1.4-2) unstable; urgency=medium
+
+  * Upload for PostgreSQL 14.
+
+ -- Christoph Berg <myon@debian.org>  Wed, 20 Oct 2021 13:52:56 +0200
+
 pgsql-asn1oid (1.4-1) unstable; urgency=medium
 
   * Update Debian package URLs.
