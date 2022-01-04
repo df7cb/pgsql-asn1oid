@@ -1,2 +1,2 @@
 version=4
-https://github.com/df7cb/pgsql-asn1oid/releases .*/upstream/(.*)\.tar\.gz
+https://github.com/df7cb/pgsql-asn1oid/tags .*/upstream/(.*)\.tar\.gz
