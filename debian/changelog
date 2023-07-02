@@ -1,3 +1,9 @@
+pgsql-asn1oid (1.5-1) unstable; urgency=medium
+
+  * New upstream version compatible with PG16.
+
+ -- Christoph Berg <myon@debian.org>  Sun, 02 Jul 2023 22:35:19 +0200
+
 pgsql-asn1oid (1.4-4) unstable; urgency=medium
 
   * Upload for PostgreSQL 15.
