@@ -1,8 +1,6 @@
 asn1oid Type for PostgreSQL
 ===========================
 
-[![Build Status](https://travis-ci.org/df7cb/pgsql-asn1oid.svg?branch=master)](https://travis-ci.org/df7cb/pgsql-asn1oid)
-
 The asn1oid extension provides a datatype for ASN.1 OIDs in PostgreSQL.
 
 ```
