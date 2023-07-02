@@ -44,7 +44,7 @@ static unsigned int size(asn1oid const *oid)
     return (VARSIZE(oid) - offsetof(asn1oid, data)) / sizeof(uint32);
 }
 
-#define PG_GETARG_ASN1OID(x) (asn1oid *)DatumGetPointer(PG_DETOAST_DATUM(PG_GETARG_DATUM(x)))
+#define PG_GETARG_ASN1OID(x) ((asn1oid *) PG_DETOAST_DATUM(PG_GETARG_DATUM(x)))
 
 Datum asn1oid_input(PG_FUNCTION_ARGS)
 {
