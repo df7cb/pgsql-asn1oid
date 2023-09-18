@@ -1,3 +1,10 @@
+pgsql-asn1oid (1.6-1) unstable; urgency=medium
+
+  * Upload for PostgreSQL 16.
+  * Use ${postgresql:Depends}.
+
+ -- Christoph Berg <myon@debian.org>  Mon, 18 Sep 2023 15:47:24 +0200
+
 pgsql-asn1oid (1.5-1) unstable; urgency=medium
 
   * New upstream version compatible with PG16.

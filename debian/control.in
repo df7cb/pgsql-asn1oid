@@ -4,7 +4,7 @@ Priority: optional
 Maintainer: Debian PostgreSQL Maintainers <team+postgresql@tracker.debian.org>
 Uploaders: Christoph Berg <myon@debian.org>
 Build-Depends: debhelper-compat (= 13), postgresql-all (>= 217~)
-Standards-Version: 4.6.1
+Standards-Version: 4.6.2
 Rules-Requires-Root: no
 Homepage: https://github.com/df7cb/pgsql-asn1oid
 Vcs-Browser: https://github.com/df7cb/pgsql-asn1oid
@@ -12,7 +12,7 @@ Vcs-Git: https://github.com/df7cb/pgsql-asn1oid.git
 
 Package: postgresql-PGVERSION-asn1oid
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, postgresql-PGVERSION
+Depends: ${shlibs:Depends}, ${misc:Depends}, ${postgresql:Depends}
 Description: ASN.1 OID data type for PostgreSQL
  This plugin provides the necessary support functions to store ASN.1 OIDs in
  a PostgreSQL database.
