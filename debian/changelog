@@ -1,3 +1,11 @@
+pgsql-asn1oid (1.6-2) unstable; urgency=medium
+
+  * Upload for PostgreSQL 17.
+  * Restrict to 64-bit architectures.
+  * Mark postgresql-all as <!nocheck>.
+
+ -- Christoph Berg <myon@debian.org>  Sat, 14 Sep 2024 20:29:11 +0200
+
 pgsql-asn1oid (1.6-1) unstable; urgency=medium
 
   * Upload for PostgreSQL 16.
