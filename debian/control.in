@@ -9,7 +9,7 @@ Build-Depends:
  architecture-is-64-bit <!pkg.postgresql.32-bit>,
  postgresql-all <!nocheck>,
  postgresql-server-dev-all,
-Standards-Version: 4.7.2
+Standards-Version: 4.7.4
 Homepage: https://github.com/df7cb/pgsql-asn1oid
 Vcs-Browser: https://github.com/df7cb/pgsql-asn1oid
 Vcs-Git: https://github.com/df7cb/pgsql-asn1oid.git
